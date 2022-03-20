@@ -1,18 +1,24 @@
+/* Importação de Fonte */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+/* Aplicação da Fonte Importada */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Centralização da div content */
 .content {
     display: flex;
+    /* Centralização no eixo X */
     justify-content: center;
+    /* Centralização no eixo Y */
     align-items: center;
     align-content: center;
     width: 100%;
     height: 100vh;
 }
 
+/* Por mais que o nosso body seja branco a gente precisa colocar a cor do card, pq se o body mudar de cor o card vai mudar junto, eu não quero isso. Eu quero que se o body mude de cor, o card continue branco. */
 .card {
     background: #fff;
     border-radius: 20px;
@@ -21,6 +27,7 @@ body {
 }
 
 .mediaCard {
+    /* center/cover vai deixar que, não importa o tamanho da altura ou largura nossa imagem sempre vai ficar no meio, e sempre vai preencher toda a largura e altura da div, sem repetir a imagem. */
     background: url(http://www.clubotaku.org/nijiwp/wp-content/uploads/3221.jpg) center/cover;
     height: 250px;
     width: 100%;
